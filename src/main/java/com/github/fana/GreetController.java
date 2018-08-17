@@ -17,6 +17,5 @@ public class GreetController {
     @GetMapping("{name}")
     public String greetByName(@RequestParam("name") String name){
         return "Hello, " + name + "!";
-        
     }
 }
