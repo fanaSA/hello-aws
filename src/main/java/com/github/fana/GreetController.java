@@ -16,6 +16,7 @@ public class GreetController {
     
     @GetMapping("{name}")
     public String greetByName(@RequestParam("name") String name){
+        System.out.println("Name as: " + name);
         return "Hello, " + name + "!";
     }
 }
